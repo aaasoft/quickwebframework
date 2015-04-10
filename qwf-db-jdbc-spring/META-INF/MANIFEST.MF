@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Qwf-db-jdbc-spring
+Bundle-SymbolicName: qwf-db-jdbc-spring
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.quickwebframework.db.jdbc.spring.impl.Activator
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: qwf-core;bundle-version="1.0.0",
+ qwf-db-jdbc;bundle-version="1.0.0",
+ qwf-ioc-spring;bundle-version="3.2.0"

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: qwf-view-jsp
+Bundle-SymbolicName: qwf-view-jsp
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.quickwebframework.view.jsp.support.Activator
+Bundle-Vendor: aaaSoft
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: javax.servlet,
+ javax.servlet.descriptor,
+ javax.servlet.http,
+ org.osgi.framework;version="1.3.0"
+Bundle-ClassPath: .
+Require-Bundle: qwf-core;bundle-version="1.0.0",
+ qwf-vr;bundle-version="1.0.0",
+ qwf-vr-jsp;bundle-version="1.0.0"

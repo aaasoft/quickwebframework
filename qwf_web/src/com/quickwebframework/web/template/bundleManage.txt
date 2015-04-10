@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Welcome to Use QuickWebFramework</title>
+<style>   
+  form{margin:   0}   
+</style>
+</head>
+<body>
+  <div>
+    <table border="1">
+    <tbody>
+    <tr>
+    <td>
+      <form method="post" enctype="multipart/form-data">
+        <input id="hiddenPluginUploadMod" type="hidden" name="mod" value="" />
+        <input type="file" class="text-input" style="height:22px" name="pluginFile" />
+        <input type="submit" class="button" value="安装插件" onclick="document.getElementById('hiddenPluginUploadMod').value='installPlugin'" />
+        <input type="submit" class="button" value="更新插件" onclick="document.getElementById('hiddenPluginUploadMod').value='updatePlugin'" />
+        <input type="submit" class="button" value="刷新插件列表" onclick="document.getElementById('hiddenPluginUploadMod').value='refreshPlugin'" />
+        <input type="submit" class="button" value="重启框架" onclick="document.getElementById('hiddenPluginUploadMod').value='restartFramework'" />
+        <input type="button" class="button" value="<-返回到根页面" onclick="window.location.href='{0}'" />
+      </form>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+{1}
+</body>
+</html>

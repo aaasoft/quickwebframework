@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="commons-io-2.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="freemarker-2.3.19.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-fileupload-1.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-lang3-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="javassist-3.11.0.GA.jar"/>
+	<classpathentry exported="true" kind="lib" path="ognl-3.0.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="xwork-core-2.3.8.jar" sourcepath="F:/Software/开发工具/Java/开源项目/Struts/struts-2.3.8-all.zip"/>
+	<classpathentry exported="true" kind="lib" path="struts2-core-2.3.8.jar" sourcepath="F:/Software/开发工具/Java/开源项目/Struts/struts-2.3.8-all.zip"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

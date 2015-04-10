@@ -1,0 +1,23 @@
+#set($pageTitle="学生信息管理") #parse("qwf-school-mis-core:head")
+<div id="container">
+	<!-- 分类菜单 START -->
+	#parse("qwf-school-mis-core:navbar")
+	<div style="clear: both;"></div>
+	<div id="content">
+		学生信息管理
+		<table>
+			<tbody>
+				<tr>
+					<td><b>学生列表</b></td>
+				</tr>
+				#foreach($student in $studentList)
+				<tr>
+					<td><p style="margin-left: 20px">${student.id}</p></td>
+					<td><p style="margin-left: 20px">${student.name}</p></td>
+				</tr>
+				#end
+			</tbody>
+		</table>
+	</div>
+</div>
+#parse("qwf-school-mis-core:foot")

@@ -1,0 +1,15 @@
+<div id="menubar">
+	<ul id="menus" class="menus">
+#foreach($menuName in $allMenuMap.keySet())
+	#set($subMenuMap = $allMenuMap.get($menuName))
+		<li class="cat-item cat-item-40"><a href="javascript:void(0);">$menuName</a>
+			<ul class="children" style="display: none;">
+	#foreach($subMenuName in $subMenuMap.keySet())
+		#set($subMenuUrl = $subMenuMap.get($subMenuName))
+				<li class="cat-item cat-item-41"><a href="$subMenuUrl">$subMenuName</a></li>
+	#end
+			</ul>
+		</li>
+#end
+	</ul>
+</div>

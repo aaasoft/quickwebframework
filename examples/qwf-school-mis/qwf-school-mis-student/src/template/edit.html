@@ -1,0 +1,23 @@
+#set($pageTitle="学生信息管理") #parse("qwf-school-mis-core:head")
+<div id="container">
+	<!-- 分类菜单 START -->
+	#parse("qwf-school-mis-core:navbar")
+	<div style="clear: both;"></div>
+	<div id="content">
+		<h2>新增/编辑学生信息</h2>
+		<table>
+			<tbody>
+				<tr>
+					<td>学号</td>
+					<td><input name="id" type="text" value=""></td>
+				</tr>
+				<tr>
+					<td>姓名</td>
+					<td><input name="name" type="text" value=""></td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="submit" value="保存">
+	</div>
+</div>
+#parse("qwf-school-mis-core:foot")

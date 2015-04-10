@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>监听器信息</title>
+</head>
+<body>
+	<p>
+		<b>监听器信息</b>
+	</p>
+#parse("qwf.test.core:navbar")
+	<table>
+		<tbody>
+#foreach($className in $listenersMap.keySet())
+	#set($listenerList = $listenersMap.get($className))
+	#if($listenerList && $listenerList.size() > 0)
+			<tr>
+				<td><b>[${className}]类型</b></td>
+			</tr>
+		#foreach($listener in $listenerList)
+			<tr>
+				<td><p style="margin-left: 20px">${listener}</p></td>
+			</tr>
+		#end
+	#end	
+#end
+		</tbody>
+	</table>
+</body>
+</html>
